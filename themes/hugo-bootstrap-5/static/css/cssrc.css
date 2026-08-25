@@ -209,7 +209,6 @@ footer .copyright a:hover {
 /* Hero */
 .hero {
   min-height: 700px;
-  max-height: 800px;
   padding-top: 100px;
   display: flex;
   justify-content: center;
@@ -218,11 +217,21 @@ footer .copyright a:hover {
 .hero h4 {
   font-weight: 600;
 }
+.hero-title h4 {
+  margin-bottom: 0.75rem;
+}
 .hero-title h1 {
   font-size: 30pt;
 }
 .hero-title-compact h1 {
   font-size: 24pt;
+}
+.hero-details h4 {
+  margin-bottom: 0.5rem;
+}
+.hero-details h5 {
+  font-weight: 500;
+  margin-top: 0.5rem;
 }
 .backdrop {
   position: absolute;
@@ -293,6 +302,54 @@ footer .copyright a:hover {
   font-size: 12px;
   font-weight: bold;
   cursor: help;
+}
+
+.update-list {
+  max-width: 640px;
+  border: 1px solid var(--cloudy-blue);
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: white;
+}
+.update-item {
+  border: none;
+  background-color: white;
+  padding: 1rem 1.5rem;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+.update-item + .update-item {
+  border-top: 1px solid var(--blue-chalk);
+}
+.update-item:hover {
+  background-color: var(--blue-chalk);
+}
+.update-item-title {
+  font-weight: bold;
+  color: var(--text-primary);
+}
+.update-item-date {
+  color: var(--light-steel-blue);
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.modal-header {
+  background-color: var(--nile-blue);
+}
+.modal-title {
+  color: white;
+}
+.modal-header .update-modal-date {
+  color: var(--tequila);
+}
+.modal-header .btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+.modal-body {
+  color: var(--text-primary);
 }
 
 .sponsorships {
@@ -374,6 +431,9 @@ footer .copyright a:hover {
 }
 
 @media only screen and (min-width: 1000px) {
+  .hero {
+    max-height: 800px;
+  }
   .hero-title h1 {
     font-size: 48pt;
   }
@@ -389,6 +449,54 @@ footer .copyright a:hover {
   .countdown-number {
     min-width: 90px;
     font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .hero {
+    min-height: auto;
+    padding-top: 90px;
+    padding-bottom: 2rem;
+    gap: 1.5rem !important;
+  }
+  .hero-title {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  .hero-title h4 {
+    font-size: 0.95rem;
+    margin-bottom: 0.35rem;
+  }
+  .hero-title h1 {
+    font-size: 22pt;
+    line-height: 1.2;
+  }
+  .hero-details h4 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+  .hero-details h5 {
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+  }
+  .countdown-number {
+    min-width: 54px;
+    padding: 0.4rem 0.5rem;
+    font-size: 1.4rem;
+  }
+  .countdown-label {
+    font-size: 0.7rem;
+  }
+  .buttons {
+    max-width: 360px;
+  }
+  .btn {
+    padding: 8px 18px;
+    font-size: 0.85rem;
+  }
+  #updates {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
