@@ -295,6 +295,54 @@ footer .copyright a:hover {
   cursor: help;
 }
 
+.update-list {
+  max-width: 640px;
+  border: 1px solid var(--cloudy-blue);
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: white;
+}
+.update-item {
+  border: none;
+  background-color: white;
+  padding: 1rem 1.5rem;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+.update-item + .update-item {
+  border-top: 1px solid var(--blue-chalk);
+}
+.update-item:hover {
+  background-color: var(--blue-chalk);
+}
+.update-item-title {
+  font-weight: bold;
+  color: var(--text-primary);
+}
+.update-item-date {
+  color: var(--light-steel-blue);
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.modal-header {
+  background-color: var(--nile-blue);
+}
+.modal-title {
+  color: white;
+}
+.modal-header .update-modal-date {
+  color: var(--tequila);
+}
+.modal-header .btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+.modal-body {
+  color: var(--text-primary);
+}
+
 .sponsorships {
   height: 100%;
   width: 100%;
