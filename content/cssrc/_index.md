@@ -3,6 +3,8 @@ title: Home
 layout: cssrc-main
 linkButtons:
   - row:
+      - text: RSVP
+        link: https://my.cs.ubc.ca/event/2026/11/cs-student-research-conference-cssrc
       - text: Submission Portal
         link: https://hotcrp-cssrc.cs.ubc.ca/
         tooltip: Must be on UBC Network/VPN to Access
