@@ -3,6 +3,10 @@ title: Home
 layout: cssrc-main
 linkButtons:
   - row:
+      - text: Submission Portal
+        link: https://hotcrp-cssrc.cs.ubc.ca/
+        tooltip: Must be on UBC Network/VPN to Access
+  - row:
       - text: Join the Discord!
         link: https://discord.gg/uWPuBTYwhs
       - text: Past Conference Page
